@@ -41,16 +41,7 @@
 
             <a href="https://twitter.com/intent/tweet?button_hashtag=#Docker" class="twitter-hashtag-button" data-size="large" data-text="I'm learning how to deploy #Docker containers." data-url="http://www.docker.com" data-lang="en" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-        <script>
-            fetch('http://127.0.0.1:8000/deliver?zone=sidebar')
-                .then(response => response.text())
-                .then(html => {
-                    const tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = html;
-                    document.body.appendChild(tempDiv);
-                })
-                .catch(error => console.error('Error fetching sidebar content:', error));
-        </script>
+        
     </body>
 
 </html>
